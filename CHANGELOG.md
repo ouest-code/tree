@@ -2,6 +2,10 @@
 
 All notable changes will be documented in this file.
 
+## [v1.6] - 2022-04-15
+
++ Minimum requirement passes to php 8.1
+
 ## [v1.5.1] - 2021-12-21
 
 + Fix Github action PHP version
