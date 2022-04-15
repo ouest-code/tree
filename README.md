@@ -11,7 +11,7 @@ This package provides a tree structure.
 
 ## Installation
 
-This package requires `php:^8.0`.  
+This package requires `php:^8.1`.  
 You can install it via composer:
 
 ```bash
