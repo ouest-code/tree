@@ -5,7 +5,7 @@
 # About Tree
 
 [![Run tests](https://github.com/ouest-code/tree/actions/workflows/run_tests.yml/badge.svg)](https://github.com/ouest-code/tree/actions/workflows/run_tests.yml)
-[![Latest Stable Version](https://poser.pugx.org/ouest-code/tree/v/stable)](https://packagist.org/packages/ouest-code/tree)
+[![Latest Stable Version](https://poser.pugx.org/ouestcode/tree/v/stable)](https://packagist.org/packages/ouestcode/tree)
 
 This package provides a tree structure.  
 

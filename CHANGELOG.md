@@ -2,6 +2,10 @@
 
 All notable changes will be documented in this file.
 
+## [v1.6.2] - 2022-04-15
+
++ Fix doc.
+
 ## [v1.6.1] - 2022-04-15
 
 + Fix doc.
