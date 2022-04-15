@@ -1,0 +1,36 @@
+{
+  "name": "ouestcode/tree",
+  "type": "library",
+  "description": "Build tree data structure.",
+  "keywords": [
+    "tree",
+    "data",
+    "structure"
+  ],
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "William",
+      "email": "bonjour@ouestcode.dev"
+    }
+  ],
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "symfony/var-dumper": "^5.3",
+    "squizlabs/php_codesniffer": "^3.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "OuestCode\\Tree\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}
