@@ -20,38 +20,27 @@ class Node implements JsonSerializable
 
     public function __get(string $name)
     {
-        if (is_object($this->item)) {
-            return $this->item->$name;
-        }
-
-        return $this->item[$name];
-    }
-
-    public function toArray(): array
-    {
-        if (is_object($this->item)) {
-            return (array) $this->item;
-        }
-
-        return $this->item;
+        return $this->getAttribute($name);
     }
 
     public function getId()
     {
-        if (is_object($this->item)) {
-            return $this->item->{$this->primaryKey};
-        }
-
-        return $this->item[$this->primaryKey];
+        return $this->getAttribute($this->primaryKey);
     }
 
     public function getParentId()
     {
-        if (is_object($this->item)) {
-            return $this->item->{$this->parentKey};
-        }
+        return $this->getAttribute($this->parentKey);
+    }
 
-        return $this->item[$this->parentKey];
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    public function toArray(): array
+    {
+        return (array) $this->item;
     }
 
     public function setParent(Node $parent): void
@@ -118,5 +107,14 @@ class Node implements JsonSerializable
     public function jsonSerialize(): array
     {
         return $this->toArray();
+    }
+
+    protected function getAttribute(string $name)
+    {
+        if (is_object($this->item)) {
+            return $this->item->$name;
+        }
+
+        return $this->item[$name];
     }
 }

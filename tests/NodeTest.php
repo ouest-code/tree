@@ -23,6 +23,7 @@ class NodeTest extends TestCase
         $this->assertEquals(1789, $node->getId());
         $this->assertEquals(1789, $node->id);
         $this->assertEquals('France', $node->name);
+        $this->assertEquals($item, $node->getItem());
     }
 
     /** @test */

@@ -104,6 +104,22 @@ class TreeTest extends TestCase
     }
 
     /** @test */
+    public function can_get_all_nodes()
+    {
+        $items = [
+            ['id' => 1, 'parentId' => null, 'name' => 'Bill'],
+            ['id' => 2, 'parentId' => 1, 'name' => 'John'],
+            ['id' => 19, 'parentId' => 1, 'name' => 'Jane'],
+        ];
+
+        $tree = new Tree($items);
+
+        $this->assertEquals($items[0]['name'], $tree->getAll()[1]->name);
+        $this->assertEquals($items[1]['name'], $tree->getAll()[2]->name);
+        $this->assertEquals($items[2]['name'], $tree->getAll()[19]->name);
+    }
+
+    /** @test */
     public function can_serialize_to_json()
     {
         $items = [

@@ -34,6 +34,11 @@ class Tree implements JsonSerializable
         ];
     }
 
+    public function getAll(): array
+    {
+        return $this->nodes;
+    }
+
     public function jsonSerialize(): array
     {
         return $this->toArray();

@@ -2,7 +2,12 @@
 
 All notable changes will be documented in this file.
 
-## [v1.7] - 2022-04-15
+## [v1.8] - 2022-04-19
+
++ Can get item in node
++ Can get all nodes in tree
+
+## [v1.7] - 2022-04-19
 
 + Can access to item properties through node
 
