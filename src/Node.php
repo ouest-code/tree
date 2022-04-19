@@ -18,6 +18,15 @@ class Node implements JsonSerializable
     ) {
     }
 
+    public function __get(string $name)
+    {
+        if (is_object($this->item)) {
+            return $this->item->$name;
+        }
+
+        return $this->item[$name];
+    }
+
     public function toArray(): array
     {
         if (is_object($this->item)) {

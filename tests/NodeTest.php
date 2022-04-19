@@ -13,14 +13,16 @@ class NodeTest extends TestCase
     public function can_make_a_node()
     {
         $item = [
-            'id' => $id = 1789,
+            'id' => 1789,
             'parentId' => null,
             'name' => 'France',
         ];
 
         $node = new Node($item, 'parentId', 'id');
 
-        $this->assertEquals($id, $node->getId());
+        $this->assertEquals(1789, $node->getId());
+        $this->assertEquals(1789, $node->id);
+        $this->assertEquals('France', $node->name);
     }
 
     /** @test */
@@ -277,6 +279,7 @@ class NodeTest extends TestCase
 
         $this->assertEquals(5, $node->getId());
         $this->assertEquals(1, $node->getParentId());
+        $this->assertEquals('J.Doe', $node->username);
     }
 
     /** @test */

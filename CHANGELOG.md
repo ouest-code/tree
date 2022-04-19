@@ -2,6 +2,10 @@
 
 All notable changes will be documented in this file.
 
+## [v1.7] - 2022-04-15
+
++ Can access to item properties through node
+
 ## [v1.6.2] - 2022-04-15
 
 + Fix doc.

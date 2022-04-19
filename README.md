@@ -37,6 +37,7 @@ $tree = new Tree($items);
 
 // Get Robert's children
 $robert = $tree->getNodeById(1); // Return the node representing Robert
+$robert->username; // Robert
 $robert->getChildren(); // Return an array containing John & Jane
 
 // Get Jane's parent
@@ -109,5 +110,6 @@ $items = [
 $tree = new Tree($items);
 
 $chicken = $tree->getNodeById(1);
+$chicken->username; // Chicken
 $chicken->getChildren(); // Return Egg's node
 ```
