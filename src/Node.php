@@ -23,6 +23,15 @@ class Node implements JsonSerializable
         return $this->getAttribute($name);
     }
 
+    public function __isset(string $name): bool
+    {
+        if (is_object($this->item)) {
+            return isset($this->item->$name);
+        }
+
+        return isset($this->item[$name]);
+    }
+
     public function getId()
     {
         return $this->getAttribute($this->primaryKey);

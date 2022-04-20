@@ -2,6 +2,10 @@
 
 All notable changes will be documented in this file.
 
+## [v1.8.1] - 2022-04-20
+
++ Fix property existence in item through node
+
 ## [v1.8] - 2022-04-19
 
 + Can get item in node
